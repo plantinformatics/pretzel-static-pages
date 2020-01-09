@@ -3,15 +3,11 @@ Static HTML Content for the landing page of the Pretzel project instance
 
 ## Installation notes
 
-(from #dev post Aug 7 - 8)
-
-The current landingPage content is in public.zip in  ~/data/
-to install, something like :
-```bash
- (cd ~/pretzel/backend/client && unzip -q ~/data/public.zip && \
- mv -i public landingPageContent && \
- sed 's/ src="/ src="landingPageContent\//' < landingPageContent/landingPageContent.html > landingPageContent/index.html)
-```
+1. Clone this repository `cd && git clone https://github.com/plantinformatics/pretzel-landing-page.git`
+2. `cd pretzel-landing-page`, then either 
+  * `ln -s "$(pwd)" /home/$USER/pretzel/backend/client/landingPageContent`, or
+  * if running pretzel via docker, add `--volume  /home/$USER/pretzel-landing-page:/app/client/landingPageContent` to your `docker run` command
+ 
 
 ## Additional Multimedia Assets
 
