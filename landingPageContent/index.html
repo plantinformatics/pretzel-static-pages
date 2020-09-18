@@ -58,6 +58,25 @@ Users can explore the above datasets as well as upload their own content.<br>
 </p>
 <div style="  max-height: 12em;  overflow-y: auto;">Release Notes
   <ul>
+    <li>2020/09/18 <mark> v2.2.5</mark>
+      <br> Some added features and fixes :
+      <br> <!-- 18522b40 -->  Draw large features properly when axis is flipped while split. Decrease size threshold for drawing black border around features.
+      <br> <!-- d32590dc -->  Do not show axis ticks for datasets with paths: false when split axis.
+      <br> <!-- 85507548 -->  Fix drawing of axis tracks after flipping.
+      <br> <!-- 59b189d7 -->  Set start position of opacity slider to actual value (100).
+      <br> <!-- 3b44d422 -->  handle flipped axis in mousewheel-zoom
+      <br> There was also some code re-organisation;  this was the primary focus of the branch (feature/move_axisShowExtend).
+    </li>
+
+    <li>2020/09/09 <mark> v2.2.3</mark>
+      <br> split axis horizontal layout - implements the first part of #193
+      <br> <!-- 244b2905 -->  axis-tracks  : fixed width per block,  make track rectangles progressively narrower width to fit.
+    </li>
+
+    <li>2020/08/21 <mark> v2.2.2</mark>
+      <br> prevent user login form field input from being set in route URL
+    </li>
+
     <li>2020/08/19 <mark> v2.2.1 - Major software upgrade</mark>
       <br> multiple servers (data sources)
       <br> paths : smoothness of density / transition when zooming (<a href="https://github.com/plantinformatics/pretzel/issues/191">#191</a>)
