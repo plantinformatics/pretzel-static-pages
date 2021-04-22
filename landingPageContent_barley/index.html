@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>Pretzel Barley / plantinformatics.io</title>
+
+
+</head><body>
+<table style="text-align: left; width: 1024px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;">
+      <h2><img style="width: 94px; height: 86px;" alt="pretzel-logo" src="landingPageContent/./pretzel-logo.png" align="left">Pretzel Barley<br>
+      </h2>
+      <div style="font-size: larger;">
+An interactive, web-based environment for navigating multi-dimensional
+datasets in barley,
+including genetic maps and chromosome-scale physical assemblies.
+      </div
+
+<br>
+      <br>
+      <br>
+
+      <img src="landingPageContent/36240487-2a2b5840-1266-11e8-9d71-fe4d275c4adb.gif" alt="" style="width: 405px; height: 439px;" align="right">
+
+      <div style="font-size: large;">
+	<div style="font-weight: bolder;">
+Currently under development. Researchers interested in beta testing are invited to sign up for an account.
+	</div>
+
+<br>
+Users can explore the pre-loaded datasets as well as upload their own content.<br>
+<h4>A user guide is available <a href="https://github.com/plantinformatics/pretzel-user-guide">here</a>.</h4>
+<h4>Please contact <a href="mailto:info@plantinformatics.io" target="_blank">info@plantinformatics.io</a> with any questions or queries.</h4>
+
+      </div>
+
+      <hr>
+<br>
+
+      <!-- [![Latest GitHub tag](https://img.shields.io/github/tag/plantinformatics/pretzel.svg?label=latest%20release&logo=github&style=for-the-badge)](https://github.com/plantinformatics/pretzel/releases)
+      ![GitHub release (latest by date)](https://img.shields.io/github/v/release/plantinformatics/pretzel?color=purple&style=for-the-badge&label=%F0%9F%A5%A8%20latest%20release) -->
+<!-- <img alt="GitHub tag (latest SemVer)" src="https://img.shields.io/github/v/tag/plantinformatics/pretzel">       -->
+<img alt="Latest release" src="https://img.shields.io/github/v/tag/plantinformatics/pretzel?label=%F0%9F%A5%A8%20Latest%20Release&style=for-the-badge&color=purple">
+<img alt="Weekly downtime for updates" src="landingPageContent/downtime.svg">
+<br>
+      <hr>
+</p>
+<div style="  max-height: 12em;  overflow-y: auto;">Release Notes
+  <ul>
+    <li>2021/03/17 <mark> v2.6.1</mark>
+      <br> PR <a href="https://github.com/plantinformatics/pretzel/pull/232">#232 :</a>
+      <br> URL in signup verified email : use API_HOST when behind proxy (URL was localhost)
+      <br> <a href="https://github.com/plantinformatics/pretzel/issues/231">#231</a>
+      Some axis track features when clicked don't show a triangle
+      - axis clicked features : handle duplicate names in range filter
+      <br> blockFeaturesCounts : include bounds check on value_0 in match, to improve benefit from index
+    </li>
+
+    <li>2021/03/16 <mark> v2.6.0</mark>
+      <br> <a href="https://github.com/plantinformatics/pretzel/issues/227">#227</a> tasks for support of high-density SNP data
+      <br> <a href="https://github.com/plantinformatics/pretzel/issues/228">#228</a> tasks for support of medium-density Exome_SNP data
+    </li>
+
+    <li>2021/02/19 <mark> v2.5.0</mark>
+      <br> <a href="https://github.com/plantinformatics/pretzel/issues/223">#223</a> Selections and defining intervals
+    </li>
+
+    <li>2021/02/05 <mark> v2.4.0</mark>
+      <br> <a href="https://github.com/plantinformatics/pretzel/issues/216">#216</a> Fixes/tweaks to existing features
+      <br> <a href="https://github.com/plantinformatics/pretzel/issues/202">#202</a> axis flip issues
+    </li>
+    <li>2021/01/22 <mark> v2.3.1</mark>
+      <br> support simultaneous logins to parent domain and subdomains.
+    </li>
+    <li>2021/01/19 <mark> v2.3.0</mark>
+      <br> fixed some routing issues related to version update (2.2.7)
+      <br> avoid interference between authentication cookies of sub-domains
+    </li>
+    <li>2021/01/14 <mark> v2.2.7</mark>
+      <br> version upgrade of framework (Ember 2 -> 3)
+      <br> converted axis menu to html for better GUI
+      <br> some GUI changes in navigation tabs and track hover related to the upgrade.
+      <br> improved performance : axis delete and block remove-from-view.
+    </li>
+
+    <li>2020/11/11 <mark> v2.2.6</mark>
+      <br> Features Counts charts in the split axes
+      <br> Zoom / Reset buttons changes
+    </li>
+
+    <li>2020/09/18 <mark> v2.2.5</mark>
+      <br> Some added features and fixes :
+      <br> <!-- 18522b40 -->  Draw large features properly when axis is flipped while split. Decrease size threshold for drawing black border around features.
+      <br> <!-- d32590dc -->  Do not show axis ticks for datasets with paths: false when split axis.
+      <br> <!-- 85507548 -->  Fix drawing of axis tracks after flipping.
+      <br> <!-- 59b189d7 -->  Set start position of opacity slider to actual value (100).
+      <br> <!-- 3b44d422 -->  handle flipped axis in mousewheel-zoom
+      <br> There was also some code re-organisation;  this was the primary focus of the branch (feature/move_axisShowExtend).
+    </li>
+
+    <li>2020/09/09 <mark> v2.2.3</mark>
+      <br> split axis horizontal layout - implements the first part of #193
+      <br> <!-- 244b2905 -->  axis-tracks  : fixed width per block,  make track rectangles progressively narrower width to fit.
+    </li>
+
+    <li>2020/08/21 <mark> v2.2.2</mark>
+      <br> prevent user login form field input from being set in route URL
+    </li>
+
+    <li>2020/08/19 <mark> v2.2.1 - Major software upgrade</mark>
+      <br> multiple servers (data sources)
+      <br> paths : smoothness of density / transition when zooming (<a href="https://github.com/plantinformatics/pretzel/issues/191">#191</a>)
+      <br> <!-- 7084ece --> prevent content changes in right panel from affecting the graph width
+      <br> <!-- 8c1c5de --> add options=trackWidth, e.g. trackWidth:3
+      <br> <!-- 799ff2b --> fix axis brushing of features below the midpoint of stacked axes.
+      <br> <!-- 1eed2da --> Add Dawn to External Lookup.
+    </li>
+
+    <li>2020/03/13 <mark> v2.0 - Major software upgrade</mark>
+      <br> view tracks as rectangles
+      <br> tracks are progressively loaded
+      <br> tracks are shown within the axis by splitting it into a rectangular space
+    </li>
+    <li>2020/02/25 <mark> v1.3.0 - Major software upgrade</mark>
+      <br> Paths selection and retrieval
+    </li>
+    <li>2020/01/09 <mark> v1.2.0 - Major software upgrade</mark>
+      <br> Progressive loading to enable faster and smoother rendering of larger data sets
+      <br> Hierarchical browsing of data sets by data type and chromosome, with filtering/grouping
+      <br> Feature search to streamline finding relevant data among a rapidly growing list of data sets
+      <br> Mouse-wheel zoom/pan and configurable path/feature density ...and much more!
+    </li>
+    <li>2019/11 Added IWGSC RefSeq 1.0 marker sets
+        <br>Axiom 35k
+        <br>Bristol SNPs
+        <br>DArT gbs, public and ver3
+        <br>iSelect
+    </li>
+    <li>2019/10 90k markers placed on all relevant assemblies </li>
+    <li>
+      2019/09 Added and updated assemblies
+      <br><i>Triticum turgidum</i> subsp. <i>durum</i> (Svevo)
+      <br><i>Triticum dicoccoides</i>  (Wild emmer v2.0)
+      <br><i>Hordeum vulgare</i> (MorexV2)
+      <br><i>Brachypodium distachyon</i> (v3.0, Ensembl plants release 43)
+    </li>
+    <li>2019/01/07, v1.1.5<br>Feature Search enhancements (left panel)</li>
+    <li>2018/11/12, v1.1.1<br>Bug fixes.</li>
+    <li>2018/11/05, v1.1.0<br>Improved visualisation updates on user interaction. Bug fixes.</li>
+    <li>2018/10 Added multiple chromosome-length genome assemblies </li>
+    <li>2018/08/24, v1.0.2<br>Added 2-stage email subscription, and password reset via email.</li>
+    <li>2018/08/22, v1.0.1<br>Added 5 genetic maps, genomes, related species, and shortName attribute of datasets, and a number of software changes. </li>
+    <li>2018/08 Added 5 genetic maps, genomes, related species, and shortName attribute of datasets, and a number of software changes. </li>
+  </ul>
+</div>
+
+
+      <hr style="width: 1024px; height: 2px;"><br>
+      <br>
+      <table style="text-align: left; width: 800px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: left;"><img style="width: 192px; height: 50px;" alt="AgVic-logo" src="landingPageContent/./Agriculture%20Victoria_logo_pms%20575_rgb.png"><br>
+            </td>
+
+            <td style="vertical-align: top; text-align: right;"><img style="width: 195px; height: 100px;" alt="GRDC-logo" src="landingPageContent/./GRDCLogoStacked_RGB.png"><br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+
+</body>
+</html>
