@@ -55,6 +55,67 @@ Pretzel is developed by Agriculture Victoria.
 <div id="Release-Notes" style="  max-height: 12em;  overflow-y: auto;">Release Notes
   <ul>
 
+    <li>Feb 28, 2024 <mark> v2.17.6</mark>
+      <br> PR <a href="https://github.com/plantinformatics/pretzel/pull/368">#368</a>
+      <p>Enable blast chromosome name to be configured to be different to Pretzel reference chromosome name :</p>
+      <ul><li>Load blast search results with block .scope matching reference ade64e58</li></ul>
+
+      <p>Documentation of that configuration process :</p>
+      <ul><li>
+add note on configuring chromosome names of Blast and VCF databases 1e356e04
+<br>  (Note it is easier to configure this before loading the reference dataset, in the reference spread-sheet or json)
+      </li></ul>
+
+      <p>Minor genotype table improvements :</p>
+      <ul>
+	<li>Clear genotype table when axis is closed or vcf block is un-viewed <a target="_blank" rel="noopener noreferrer" href="https://github.com/plantinformatics/pretzel/commit/a6661432">a6661432</a></li>
+	<li>split INFO column into multiple columns in feature table <a target="_blank" rel="noopener noreferrer" href="https://github.com/plantinformatics/pretzel/commit/9c2c7c14">9c2c7c14</a></li>
+	<li>handle empty genotype table <a target="_blank" rel="noopener noreferrer" href="https://github.com/plantinformatics/pretzel/commit/cf6c0985">cf6c0985</a></li>
+	<li>make column header height resizer easier to grab <a target="_blank" rel="noopener noreferrer" href="https://github.com/plantinformatics/pretzel/commit/fa727f42">fa727f42</a> </li>
+	<li>only create graph-annotations component while showTablePositionAlignment is true <a target="_blank" rel="noopener noreferrer" href="https://github.com/plantinformatics/pretzel/commit/f3e9652d">f3e9652d</a></li>
+      </ul>
+    </li>
+
+    <li>Feb 2, 2024 <mark> v2.17.5</mark>
+      <br> PR <a href="https://github.com/plantinformatics/pretzel/pull/366">#366</a>
+      <p>Genotype table - various minor items and issues</p>
+      <ul>
+	<li>SNP filters in INFO, histogram, tracks</li>
+	<li>multiple chromosomes from one dataset : don't duplicate dataset and sample columns, add Chr column</li>
+	<li>Germinate : don't require dialog for reference</li>
+	<li>add Spark server support as sub-type of Germinate</li>
+      </ul>
+      <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/plantinformatics/pretzel/pull/343">#343</a>, <a target="_blank" rel="noopener noreferrer" href="https://github.com/plantinformatics/pretzel/pull/359">#359</a></p>
+    </li>
+
+    <li>Dec 12, 2023 <mark> v2.17.4</mark>
+      <br> PR <a href="https://github.com/plantinformatics/pretzel/pull/363">#363</a>
+      <p>fixes for :</p>
+      <ul>
+	<li>sign-up</li>
+	<li>window resize axes</li>
+	<li>display of axes for blast results</li>
+      </ul>
+    </li>
+
+    <li>Dec 7, 2023 <mark> v2.17.3</mark>
+      <br> PR <a href="https://github.com/plantinformatics/pretzel/pull/362">#362</a>
+    </li>
+
+    <li>Aug 30, 2023 <mark> v2.17.0</mark>
+      <br> PR <a href="https://github.com/plantinformatics/pretzel/pull/358">#358</a>
+      <br> Genotype next steps (branch : feature/ongoing genotype) <a href="https://github.com/plantinformatics/pretzel/issues/356">#356</a>
+    </li>
+
+    <li>Feb 2, 2023 <mark> v2.16.0</mark>
+      <br> PR <a href="https://github.com/plantinformatics/pretzel/pull/351">#351</a>
+    </li>
+
+    <li>Nov 3, 2022<mark> v2.15.2</mark>
+    </li>
+    <li>Oct 21, 2022<mark> v2.15.1</mark>
+    </li>
+
     <li>2022/08/11 <mark> v2.15.0</mark>
       <br> PR <a href="https://github.com/plantinformatics/pretzel/pull/314">#330</a>
       <br> Prototype genotype backend API <a href="https://github.com/plantinformatics/pretzel/issues/317">#317</a>
